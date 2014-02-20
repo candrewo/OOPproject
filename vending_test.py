@@ -22,7 +22,7 @@ class TestVendingMachine(unittest.TestCase):
 	def sell_test(self):
 		self.vending.sell(sprite)
 		self.assertEqual(self.stock,{'coca-cola': 10,
-		 'sprite': 10,'root beer': 10})
+		 'sprite': 9,'root beer': 10})
 
 	def add_new_item_test(self):
 		self.vending.add_new_item(oj.item, oj.amount)
